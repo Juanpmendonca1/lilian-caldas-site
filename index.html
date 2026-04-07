@@ -86,19 +86,23 @@
 
     /* ══════════════ HERO ══════════════ */
     .hero {
-      min-height: 100svh;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      align-items: start;
       background: var(--cream);
       overflow: hidden;
+      margin-top: 0;
+      padding-top: 0;
     }
 
     /* Coluna esquerda */
     .hero-left {
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 48px 56px 48px 48px;
+      display: flex; flex-direction: column; justify-content: flex-start;
+      padding: 32px 56px 48px 48px;
       position: relative; z-index: 2;
       gap: 0;
+      align-self: start;
     }
     /* Desktop: top e bottom empilhados normalmente dentro de hero-left */
     .hero-top { margin-bottom: 0; }
@@ -137,23 +141,30 @@
     .hero h1 em { font-style: italic; color: var(--primary); font-weight: 700; }
 
     .hero-sub {
-      font-size: 15px; font-weight: 400;
-      line-height: 1.72; color: var(--ink-soft);
-      margin-bottom: 36px; max-width: 420px;
+      font-size: 14px; font-weight: 400;
+      line-height: 1.8; color: var(--ink-mid);
+      margin-bottom: 40px; max-width: 420px;
+    }
+    .hero-sub-accent {
+      color: var(--primary);
+      font-weight: 600;
     }
 
     .hero-note {
-      font-size: 12px; color: var(--ink-soft); margin-top: 18px;
+      font-size: 13px; font-weight: 600; color: var(--ink-mid); margin-top: 20px;
       letter-spacing: .02em;
     }
 
     /* Coluna direita: foto dominante */
-    .hero-right { position: relative; overflow: hidden; }
+    .hero-right { position: relative; overflow: hidden; height: 100%; align-self: start; padding: 0; margin: 0; }
     .hero-photo {
+      position: absolute;
+      top: 0; left: 0;
       width: 100%; height: 100%;
-      object-fit: cover; object-position: top center;
+      object-fit: cover; object-position: top;
       display: block;
       mix-blend-mode: multiply;
+      margin: 0; padding: 0;
       filter: contrast(1.05) brightness(1.01);
     }
     .hero-right::before {
@@ -293,12 +304,19 @@
       position: relative; z-index: 1;
     }
     .pain-close-text p {
-      font-size: clamp(18px, 2.2vw, 24px);
+      font-size: clamp(16px, 2vw, 22px);
       font-style: italic; font-weight: 300;
-      color: rgba(255,255,255,.7);
-      line-height: 1.5; margin-bottom: 6px;
+      color: rgba(255,255,255,.8);
+      line-height: 1.65; margin-bottom: 18px;
     }
     .pain-close-text p strong { font-style: normal; font-weight: 700; color: #fff; }
+    .pain-close-cta {
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .pain-close-info {
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,.7);
+      text-align: center;
+    }
 
     /* ══════════════ SOBRE — centralizado, fundido com vídeo ══════════════ */
     .about {
@@ -373,7 +391,7 @@
       letter-spacing: -.02em; margin-bottom: 14px;
     }
     .v-head h2 em { font-style: italic; color: var(--primary); font-weight: 600; }
-    .v-head p { font-size: 16px; color: var(--ink-soft); font-style: italic; }
+    .v-head p { font-size: 17px; color: var(--ink-mid); font-style: italic; line-height: 1.7; }
     .v-frame {
       max-width: 780px; margin: 0 auto;
       border-radius: 16px; overflow: hidden;
@@ -681,7 +699,7 @@
 
     <!-- hero-bottom: subtítulo + CTA (fica abaixo da foto no mobile) -->
     <div class="hero-bottom">
-      <p class="hero-sub">Perda de xixi ou cocô, dor na relação sexual, intestino preso ou outras dores pélvicas. Tratamento adaptado para sua rotina e seu corpo, no conforto e na privacidade da sua casa.</p>
+      <p class="hero-sub"><span class="hero-sub-accent">Perda de xixi ou cocô,</span> dor na relação sexual, intestino preso ou outras dores pélvicas. Tratamento adaptado para sua rotina e seu corpo, no conforto e na privacidade da sua casa.</p>
       <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
         Quero recuperar minha qualidade de vida
       </a>
@@ -803,13 +821,15 @@
 
     <div class="pain-close rv">
       <div class="pain-close-text">
-        <p>Esses problemas não são frescura. <strong>Não são "coisa da idade".</strong></p>
-        <p>Na maioria dos casos, <strong>têm solução.</strong></p>
+        <p>Esses problemas não são frescura.<br><strong>Não são "coisa da idade".</strong></p>
+        <p>Na maioria dos casos,<br><strong>têm solução.</strong></p>
       </div>
-      <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
-        Quero entender o que está acontecendo com meu corpo
-      </a>
-      <p style="font-size: 13px; color: rgba(255,255,255,.6); margin-top: 16px;">Salvador/BA. Não aceitamos convênio.</p>
+      <div class="pain-close-cta">
+        <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
+          Quero entender o que está acontecendo com meu corpo
+        </a>
+        <p class="pain-close-info">Salvador/BA. Não aceitamos convênio.</p>
+      </div>
     </div>
 
   </div>
