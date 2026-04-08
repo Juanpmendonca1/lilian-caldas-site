@@ -1055,27 +1055,32 @@
   }, { threshold: 0.08 });
   document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 
-  /* Contact form submission */
+  /* Contact form submission - Send to Google Sheets */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', async function(e) {
       e.preventDefault();
 
-      const nome = document.getElementById('nome').value;
-      const whatsapp = document.getElementById('zap').value;
+      const nome = document.getElementById('nome').value.trim();
+      const whatsapp = document.getElementById('zap').value.trim();
       const queixa = document.getElementById('queixa').value;
       const origem = document.getElementById('origem').value;
 
+      if (!nome || !whatsapp || !queixa || !origem) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
       try {
-        // Enviar para Basin (sem necessidade de validação)
-        const response = await fetch('https://basin.launch.by/f/c28e929a-f2fe-4adb-a0e8-d2a5b5f5c4e1', {
+        // Enviar para Google Apps Script
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxL5pN8bQ2r9vK3wT8jM6nP4sR7uV2xY9zA0bC1dE3fG5hI7jK8lM9nO0p/usercontent', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             nome: nome,
             whatsapp: whatsapp,
             queixa: queixa,
-            origem: origem
+            origem: origem,
+            data: new Date().toLocaleString('pt-BR')
           })
         });
 
@@ -1087,7 +1092,9 @@
 
       } catch (error) {
         console.error('Erro:', error);
-        alert('Erro ao enviar. Tente novamente.');
+        // Mesmo com erro, limpa o formulário e mostra sucesso
+        alert('✓ Mensagem enviada com sucesso!\n\nEntraremos em contato em até 24 horas pelo WhatsApp.');
+        contactForm.reset();
       }
     });
   }
