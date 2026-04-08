@@ -99,7 +99,7 @@
     /* Coluna esquerda */
     .hero-left {
       display: flex; flex-direction: column; justify-content: flex-start;
-      padding: 32px 56px 48px 48px;
+      padding: 48px 56px 48px 48px;
       position: relative; z-index: 2;
       gap: 0;
       align-self: start;
@@ -141,17 +141,17 @@
     .hero h1 em { font-style: italic; color: var(--primary); font-weight: 700; }
 
     .hero-sub {
-      font-size: 14px; font-weight: 400;
-      line-height: 1.8; color: var(--ink-mid);
-      margin-bottom: 40px; max-width: 420px;
+      font-size: 15px; font-weight: 400;
+      line-height: 1.72; color: var(--ink-soft);
+      margin-bottom: 36px; max-width: 420px;
     }
-    .hero-sub-accent {
-      color: var(--primary);
-      font-weight: 600;
+    .hero-sub strong {
+      font-weight: 700;
+      color: var(--ink);
     }
 
     .hero-note {
-      font-size: 13px; font-weight: 600; color: var(--ink-mid); margin-top: 20px;
+      font-size: 12px; font-weight: 400; color: var(--ink-soft); margin-top: 18px;
       letter-spacing: .02em;
     }
 
@@ -699,7 +699,7 @@
 
     <!-- hero-bottom: subtítulo + CTA (fica abaixo da foto no mobile) -->
     <div class="hero-bottom">
-      <p class="hero-sub"><span class="hero-sub-accent">Perda de xixi ou cocô,</span> dor na relação sexual, intestino preso ou outras dores pélvicas. Tratamento adaptado para sua rotina e seu corpo, no conforto e na privacidade da sua casa.</p>
+      <p class="hero-sub">Perda de xixi ou cocô, dor na relação sexual, intestino preso ou outras dores pélvicas. <strong>Tratamento adaptado para sua rotina e seu corpo, no conforto e na privacidade da sua casa.</strong></p>
       <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
         Quero recuperar minha qualidade de vida
       </a>
@@ -708,7 +708,7 @@
   </div>
 
   <div class="hero-right">
-    <img src="lilian-caldas.png?v=2" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="hero-photo">
+    <img src="lilian-caldas-editada.png" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="hero-photo">
   </div>
 
 </section>
@@ -844,7 +844,7 @@
     <div class="about-inner rv">
 
       <div class="about-photo-wrap">
-        <img src="lilian-caldas.png?v=2" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="about-photo">
+        <img src="lilian-caldas-editada.png" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="about-photo">
       </div>
 
       <div class="about-text">
@@ -974,18 +974,18 @@
         <p>Preencha abaixo e o retorno acontece em até 24 horas.</p>
       </div>
 
-      <form class="fg rv" action="https://formsubmit.co/juanpmendonca.mkt@gmail.com" method="POST">
+      <form id="contactForm" class="fg rv">
         <div class="fd">
           <label for="nome">Nome completo</label>
-          <input type="text" id="nome" placeholder="Seu nome completo" required autocomplete="name">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
         </div>
         <div class="fd">
           <label for="zap">WhatsApp</label>
-          <input type="tel" id="zap" placeholder="(71) 9 0000-0000" required autocomplete="tel">
+          <input type="tel" id="zap" name="whatsapp" placeholder="(71) 9 0000-0000" required autocomplete="tel">
         </div>
         <div class="fd">
           <label for="queixa">Principal queixa</label>
-          <select id="queixa" required>
+          <select id="queixa" name="queixa" required>
             <option value="" disabled selected>Selecione sua principal queixa</option>
             <option>Incontinência urinária</option>
             <option>Incontinência fecal</option>
@@ -998,7 +998,7 @@
         </div>
         <div class="fd">
           <label for="origem">Como nos encontrou</label>
-          <select id="origem" required>
+          <select id="origem" name="origem" required>
             <option value="" disabled selected>Como você chegou até aqui?</option>
             <option>Google</option>
             <option>Instagram</option>
