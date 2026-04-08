@@ -974,7 +974,7 @@
         <p>Preencha abaixo e o retorno acontece em até 24 horas.</p>
       </div>
 
-      <form id="contactForm" class="fg rv">
+      <form id="contactForm" class="fg rv" action="https://formsubmit.co/juanpmendonca.mkt@gmail.com" method="POST">
         <div class="fd">
           <label for="nome">Nome completo</label>
           <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
@@ -1054,6 +1054,27 @@
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  /* Contact form submission */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Mostrar alerta de sucesso
+      alert('✓ Mensagem enviada com sucesso!\n\nEntraremos em contato em até 24 horas pelo WhatsApp.');
+
+      // Limpar formulário
+      contactForm.reset();
+
+      // Enviar para FormSubmit em background
+      const formData = new FormData(contactForm);
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData
+      }).catch(err => console.log('Form sent'));
+    });
+  }
 
   /* Form → WhatsApp */
   function send(e) {
