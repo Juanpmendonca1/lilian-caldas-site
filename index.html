@@ -682,62 +682,6 @@
       .fab { width: 52px; height: 52px; bottom: 20px; right: 18px; }
       .fab svg { width: 26px; height: 26px; }
     }
-
-    /* Success Modal */
-    .success-modal {
-      display: none;
-      position: fixed; top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.2);
-      text-align: center;
-      z-index: 9999;
-      max-width: 380px;
-      animation: slideIn .4s ease-out;
-    }
-    .success-modal.show { display: block; }
-    .success-modal-icon {
-      width: 60px; height: 60px;
-      margin: 0 auto 20px;
-      background: var(--primary);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      animation: scaleIn .5s ease-out .2s both;
-    }
-    .success-modal-icon::after {
-      content: '✓';
-      color: white;
-      font-size: 32px;
-      font-weight: 700;
-    }
-    .success-modal h3 {
-      font-size: 24px;
-      color: var(--ink);
-      margin-bottom: 12px;
-    }
-    .success-modal p {
-      font-size: 15px;
-      color: var(--ink-mid);
-      line-height: 1.6;
-    }
-    .success-backdrop {
-      display: none;
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,.3);
-      z-index: 9998;
-    }
-    .success-backdrop.show { display: block; }
-
-    @keyframes slideIn {
-      from { opacity: 0; transform: translate(-50%, -45%); }
-      to { opacity: 1; transform: translate(-50%, -50%); }
-    }
-    @keyframes scaleIn {
-      from { transform: scale(.7); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
   </style>
 </head>
 <body>
@@ -1068,14 +1012,6 @@
         </div>
       </form>
 
-      <!-- Success Modal -->
-      <div class="success-backdrop" id="successBackdrop"></div>
-      <div class="success-modal" id="successModal">
-        <div class="success-modal-icon"></div>
-        <h3>Obrigado!</h3>
-        <p>Recebemos sua mensagem e entraremos em contato em até 24 horas pelo WhatsApp.</p>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1137,7 +1073,7 @@
 
       try {
         // Enviar para Google Apps Script
-        const response = await fetch('https://script.google.com/macros/s/AKfycby31MSsluN0H3YSLJK38lP7V-Kwbs1lmneyAgShEmC9CxHwQb4WotWg6kgXZ4V20-8rXQ/exec', {
+        await fetch('https://script.google.com/macros/s/AKfycby31MSsluN0H3YSLJK38lP7V-Kwbs1lmneyAgShEmC9CxHwQb4WotWg6kgXZ4V20-8rXQ/exec', {
           method: 'POST',
           body: JSON.stringify({
             nome: nome,
@@ -1148,34 +1084,13 @@
           })
         });
 
-        // Mostrar modal de sucesso
-        const backdrop = document.getElementById('successBackdrop');
-        const modal = document.getElementById('successModal');
-        backdrop.classList.add('show');
-        modal.classList.add('show');
-
-        // Limpar formulário
-        contactForm.reset();
-
-        // Fechar modal após 4 segundos
-        setTimeout(() => {
-          backdrop.classList.remove('show');
-          modal.classList.remove('show');
-        }, 4000);
+        // Redirecionar para página de obrigado
+        window.location.href = '/obrigado.html';
 
       } catch (error) {
         console.error('Erro:', error);
-        // Mesmo com erro, mostra sucesso
-        const backdrop = document.getElementById('successBackdrop');
-        const modal = document.getElementById('successModal');
-        backdrop.classList.add('show');
-        modal.classList.add('show');
-        contactForm.reset();
-
-        setTimeout(() => {
-          backdrop.classList.remove('show');
-          modal.classList.remove('show');
-        }, 4000);
+        // Mesmo com erro, redireciona
+        window.location.href = '/obrigado.html';
       }
     });
   }
