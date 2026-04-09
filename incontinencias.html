@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tratamento para incontinência urinária e fecal em Salvador, BA. Fisioterapia pélvica domiciliar com a Dra. Lílian Caldas. Recupere o controle.">
+  <title>Tratamento para Incontinência Urinária e Fecal | Lílian Caldas</title>
+
+  <!--
+    PERSONALIZE ANTES DE PUBLICAR:
+    1. Substitua wa.me/5571999682553 pelo número real da Lílian (ATUALIZADO: 71999682553)
+    2. Substitua SEU_VIDEO_ID pelo ID do vídeo YouTube
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18074460306"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18074460306');
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ── Paleta editorial: cream · mauve · terracotta ── */
+    :root {
+      --cream:     #FDFAF5;
+      --warm:      #F4EDE2;
+      --sand:      #E2D4BF;
+      --mist:      #C8B8A2;
+      --primary:   #7A3F52;
+      --primary-l: #A0627A;
+      --terra:     #B87355;
+      --terra-l:   #D4A080;
+      --ink:       #1A1210;
+      --ink-mid:   #4A3830;
+      --ink-soft:  #8A7868;
+      --dark:      #130E0A;
+      --dark2:     #1E1612;
+      --dark3:     #261A14;
+      --green:     #25D366;
+      --green-dk:  #1DAE55;
+
+      --ff: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--ff);
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a   { text-decoration: none; color: inherit; }
+
+    .w { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+
+    /* ── Buttons — todos verdes ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 15px 30px; border-radius: 100px;
+      font-family: var(--ff); font-size: 14px; font-weight: 600;
+      letter-spacing: .01em; cursor: pointer; border: none; line-height: 1;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn-p {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37,211,102,.28);
+    }
+    .btn-p:hover {
+      transform: translateY(-2px);
+      background: var(--green-dk);
+      box-shadow: 0 10px 32px rgba(37,211,102,.38);
+    }
+    .btn-w {
+      background: #fff;
+      color: var(--green-dk);
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+    }
+    .btn-w:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(0,0,0,.2);
+    }
+
+
+    /* ══════════════ HERO ══════════════ */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      align-items: start;
+      background: var(--cream);
+      overflow: hidden;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    /* Coluna esquerda */
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: flex-start;
+      padding: 48px 56px 48px 48px;
+      position: relative; z-index: 2;
+      gap: 0;
+      align-self: start;
+    }
+    /* Desktop: top e bottom empilhados normalmente dentro de hero-left */
+    .hero-top { margin-bottom: 0; }
+    .hero-bottom { margin-top: 0; }
+    .hero-left::after {
+      content: '';
+      position: absolute; right: 0; top: 18%; bottom: 18%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--sand), transparent);
+    }
+
+    /* Badge estilo pill com ponto — igual ao primeiro HTML */
+    .h-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 16px;
+      background: rgba(184,115,85,.1);
+      border: 1px solid rgba(184,115,85,.28);
+      border-radius: 100px;
+      font-size: 12px; font-weight: 600; color: var(--terra);
+      letter-spacing: .07em; text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .h-badge::before {
+      content: ''; width: 6px; height: 6px;
+      background: var(--terra); border-radius: 50%; flex-shrink: 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 3.5vw, 48px);
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--primary); font-weight: 700; }
+
+    .hero-sub {
+      font-size: 14px; font-weight: 400;
+      line-height: 1.65; color: var(--ink-soft);
+      margin-bottom: 36px; max-width: 420px;
+    }
+    .hero-sub strong {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .hero-note {
+      font-size: 13px; font-weight: 600; color: var(--ink); margin-top: 18px;
+      letter-spacing: .02em;
+    }
+
+    /* Coluna direita: foto dominante */
+    .hero-right { position: relative; overflow: hidden; height: 100%; align-self: start; padding: 0; margin: 0; }
+    .hero-photo {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top;
+      display: block;
+      mix-blend-mode: multiply;
+      margin: 0; padding: 0;
+      filter: contrast(1.05) brightness(1.01);
+    }
+    .hero-right::before {
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(135deg, rgba(253,250,245,.1) 0%, rgba(184,115,85,.05) 100%);
+      pointer-events: none;
+    }
+    /* Texto vertical decorativo — oculto */
+    .hero-vert { display: none; }
+
+    /* ══════════════ STRIP ══════════════ */
+    .hero-strip {
+      background: var(--primary);
+      padding: 18px 0; overflow: hidden;
+    }
+    .strip-track {
+      display: flex; white-space: nowrap;
+      animation: marquee 30s linear infinite;
+    }
+    .strip-item {
+      display: inline-flex; align-items: center; gap: 24px;
+      padding: 0 24px;
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.6);
+    }
+    .strip-item::after { content: '·'; color: rgba(255,255,255,.3); font-size: 16px; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ══════════════ DOR — cards visuais ══════════════ */
+    .pain {
+      background: var(--dark);
+      padding: 100px 0;
+      position: relative; overflow: hidden;
+    }
+    .pain::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 5%, var(--terra) 50%, transparent 95%);
+    }
+    /* Glow decorativo */
+    .pain-glow {
+      position: absolute; top: 40%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px; height: 500px;
+      background: radial-gradient(ellipse, rgba(184,115,85,.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .pain-hd { text-align: center; margin-bottom: 64px; position: relative; z-index: 1; }
+    .pain-hd-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--terra-l); margin-bottom: 20px;
+    }
+    .pain-hd-label::before, .pain-hd-label::after {
+      content: ''; width: 20px; height: 1px; background: var(--terra);
+    }
+    .pain-hd h2 {
+      font-size: clamp(26px, 3.8vw, 48px);
+      font-weight: 700; color: #fff;
+      line-height: 1.12; letter-spacing: -.02em;
+      max-width: 640px; margin: 0 auto;
+    }
+    .pain-hd h2 em { font-style: italic; color: var(--terra-l); font-weight: 400; }
+
+    /* Grid 3x2 com cards visuais */
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 72px;
+      position: relative; z-index: 1;
+    }
+    .pc {
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 20px;
+      padding: 32px 28px 36px;
+      position: relative; overflow: hidden;
+      transition: border-color .25s ease, transform .25s ease;
+      cursor: default;
+    }
+    .pc:hover {
+      border-color: rgba(184,115,85,.3);
+      transform: translateY(-4px);
+    }
+    /* Linha de acento no topo ao hover */
+    .pc::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--terra), var(--primary-l));
+      opacity: 0; transition: opacity .25s ease;
+    }
+    .pc:hover::before { opacity: 1; }
+
+    /* Ícone SVG container */
+    .pc-icon {
+      width: 64px; height: 64px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 22px;
+      background: rgba(184,115,85,.12);
+      color: var(--terra-l);
+      transition: background .25s;
+    }
+    .pc:hover .pc-icon { background: rgba(184,115,85,.2); }
+    .pc:nth-child(2n) .pc-icon { background: rgba(122,63,82,.18); color: #C4909F; }
+    .pc:nth-child(2n):hover .pc-icon { background: rgba(122,63,82,.28); }
+
+    .pc-icon svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    .pc-title {
+      font-size: 17px; font-weight: 700;
+      color: #fff; letter-spacing: -.01em;
+      margin-bottom: 10px; line-height: 1.25;
+    }
+    .pc-desc {
+      font-size: 14px; line-height: 1.68;
+      color: rgba(255,255,255,.5); font-weight: 400;
+    }
+    /* Número decorativo de fundo */
+    .pc-bg-num {
+      position: absolute; bottom: -12px; right: 16px;
+      font-size: 88px; font-weight: 800;
+      color: rgba(255,255,255,.025);
+      line-height: 1; letter-spacing: -.04em;
+      user-select: none; pointer-events: none;
+    }
+
+    /* Fechamento da seção */
+    .pain-close {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 48px; align-items: center;
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 56px;
+      position: relative; z-index: 1;
+    }
+    .pain-close-text p {
+      font-size: clamp(16px, 2vw, 22px);
+      font-style: italic; font-weight: 300;
+      color: rgba(255,255,255,.8);
+      line-height: 1.65; margin-bottom: 18px;
+    }
+    .pain-close-text p strong { font-style: normal; font-weight: 700; color: #fff; }
+    .pain-close-cta {
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .pain-close-info {
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,.7);
+      text-align: center;
+    }
+
+    /* ══════════════ SOBRE — centralizado, fundido com vídeo ══════════════ */
+    .about {
+      background: var(--warm);
+      padding: 80px 0 64px;
+    }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 64px;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about-photo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .about-photo {
+      width: 100%;
+      border-radius: 24px;
+      aspect-ratio: 2.5 / 3;
+      object-fit: cover;
+      object-position: center;
+      filter: contrast(1.02) brightness(1.01);
+      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+    }
+    .about-text {
+      text-align: left;
+      padding-top: 4px;
+    }
+    .about-lbl {
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--terra); margin-bottom: 20px;
+      display: flex; align-items: center; justify-content: flex-start; gap: 10px;
+    }
+    .about-lbl::before, .about-lbl::after {
+      content: ''; width: 20px; height: 1px; background: var(--terra);
+    }
+    .about h2 {
+      font-size: clamp(28px, 3.4vw, 46px);
+      font-weight: 800; color: var(--ink);
+      letter-spacing: -.02em; margin-bottom: 28px; line-height: 1.15;
+    }
+    .about h2 em { font-style: italic; color: var(--primary); font-weight: 600; }
+    .about p {
+      font-size: 16px; line-height: 1.75;
+      color: var(--ink-mid); margin-bottom: 20px;
+    }
+    .about p strong { color: var(--ink); font-weight: 600; }
+    /* Linha separadora decorativa entre about e vídeo */
+    .about-divider {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin: 56px 0 0;
+    }
+    .about-divider::before, .about-divider::after {
+      content: ''; flex: 1; max-width: 120px; height: 1px; background: var(--sand);
+    }
+    .about-divider-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--terra); flex-shrink: 0;
+    }
+
+    /* ══════════════ VÍDEO — fundido com about ══════════════ */
+    .vsec { background: var(--warm); padding: 56px 0 100px; }
+    .v-head { text-align: center; max-width: 580px; margin: 0 auto 52px; }
+    .v-head h2 {
+      font-size: clamp(26px, 3.6vw, 46px);
+      font-weight: 700; color: var(--ink);
+      letter-spacing: -.02em; margin-bottom: 14px;
+    }
+    .v-head h2 em { font-style: italic; color: var(--primary); font-weight: 600; }
+    .v-head p { font-size: 17px; color: var(--ink-mid); font-style: italic; line-height: 1.7; }
+    .v-frame {
+      max-width: 780px; margin: 0 auto;
+      border-radius: 16px; overflow: hidden;
+      box-shadow: 0 24px 72px rgba(0,0,0,.14);
+      aspect-ratio: 16/9; background: var(--dark);
+    }
+    .v-frame iframe { width: 100%; height: 100%; border: none; display: block; }
+    .v-cta { text-align: center; margin-top: 40px; }
+
+    /* ══════════════ COMO FUNCIONA — estilo 1º HTML ══════════════ */
+    .how { padding: 100px 0; background: var(--cream); }
+    .how-hd { text-align: center; max-width: 520px; margin: 0 auto 72px; }
+    .how-hd h2 {
+      font-size: clamp(26px, 3.2vw, 42px);
+      font-weight: 700; color: var(--ink); letter-spacing: -.02em;
+    }
+    .how-hd h2 em { font-style: italic; color: var(--primary); font-weight: 600; }
+
+    /* 4 passos com linha conectora (igual ao 1º HTML) */
+    .how-steps {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      position: relative; margin-bottom: 56px;
+    }
+    .how-steps::before {
+      content: ''; position: absolute; top: 30px;
+      left: 12.5%; right: 12.5%; height: 1px;
+      background: linear-gradient(90deg, var(--terra-l), var(--primary-l)); z-index: 0;
+    }
+    .hs { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .hs-n {
+      width: 62px; height: 62px; border-radius: 50%;
+      background: var(--cream); border: 2px solid var(--terra-l);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--primary);
+      margin: 0 auto 22px; letter-spacing: -.01em;
+    }
+    .hs h3 {
+      font-size: 17px; font-weight: 700;
+      color: var(--ink); margin-bottom: 8px; letter-spacing: -.01em;
+    }
+    .hs p { font-size: 13px; line-height: 1.7; color: var(--ink-soft); }
+
+    .how-note {
+      max-width: 640px; margin: 0 auto;
+      background: var(--warm); border: 1px solid var(--sand);
+      border-radius: 16px; padding: 32px 44px; text-align: center;
+    }
+    .how-note p {
+      font-size: 16px; line-height: 1.72;
+      color: var(--ink-mid); font-style: italic;
+    }
+    .how-note strong { font-style: normal; color: var(--primary); font-weight: 700; }
+
+    /* ══════════════ CTA BAND ══════════════ */
+    .cta-band {
+      background: var(--primary);
+      padding: 100px 0; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-band::before {
+      content: ''; position: absolute; top: -180px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-band::after {
+      content: 'você';
+      position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%);
+      font-size: 260px; font-weight: 800; letter-spacing: -.04em;
+      color: rgba(255,255,255,.04); white-space: nowrap; pointer-events: none;
+    }
+    .cta-band h2 {
+      font-size: clamp(28px, 4vw, 52px); font-weight: 800;
+      color: #fff; letter-spacing: -.02em; margin-bottom: 28px; position: relative;
+      line-height: 1.2;
+    }
+    .cta-band p {
+      font-size: 16px; color: rgba(255,255,255,.7);
+      margin-bottom: 48px; font-style: italic; position: relative;
+      line-height: 1.65;
+    }
+
+    /* ══════════════ FORMULÁRIO ══════════════ */
+    .formsec { padding: 100px 0; background: var(--warm); }
+    .form-in { max-width: 560px; margin: 0 auto; }
+    .form-hd { margin-bottom: 44px; }
+    .form-hd h2 {
+      font-size: clamp(24px, 3vw, 38px); font-weight: 700;
+      color: var(--ink); letter-spacing: -.02em; margin-bottom: 8px;
+    }
+    .form-hd p { font-size: 14px; color: var(--ink-soft); }
+    .fg { display: grid; gap: 14px; }
+    .fd { display: flex; flex-direction: column; gap: 5px; }
+    .fd label {
+      font-size: 11px; font-weight: 700; color: var(--ink-mid);
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+    .fd input, .fd select {
+      padding: 13px 16px;
+      border: 1.5px solid var(--sand); border-radius: 8px;
+      font-family: var(--ff); font-size: 14px; color: var(--ink);
+      background: #fff; outline: none;
+      transition: border-color .18s, box-shadow .18s;
+      -webkit-appearance: none; appearance: none;
+    }
+    .fd select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A7868' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px;
+    }
+    .fd input:focus, .fd select:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(37,211,102,.12);
+    }
+    .fd input::placeholder { color: var(--mist); }
+    .form-sb { margin-top: 6px; }
+    .form-sb .btn { width: 100%; justify-content: center; font-size: 15px; padding: 16px 32px; }
+
+    /* ══════════════ FOOTER ══════════════ */
+    footer { background: var(--dark); padding: 52px 0 32px; }
+    .foot-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,.07); margin-bottom: 24px;
+    }
+    .f-name { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -.01em; }
+    .f-role { font-size: 11px; color: rgba(255,255,255,.4); letter-spacing: .07em; margin-top: 3px; text-transform: uppercase; }
+    .f-copy { font-size: 12px; color: rgba(255,255,255,.22); text-align: center; }
+
+    /* ── WhatsApp FAB ── */
+    .fab {
+      position: fixed; bottom: 28px; right: 28px; z-index: 300;
+      width: 60px; height: 60px; background: var(--green); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .fab:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,.55); }
+    .fab svg { width: 30px; height: 30px; fill: #fff; }
+
+    /* ── Reveal ── */
+    .rv { opacity: 0; transform: translateY(22px); transition: opacity .55s ease, transform .55s ease; }
+    .rv.in { opacity: 1; transform: none; }
+
+    /* ══════════════ RESPONSIVE — TABLET ══════════════ */
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 56px 32px 48px; }
+      .hero-left::after { display: none; }
+      .hero-right { height: 58svh; max-height: 580px; }
+      .hero-vert { display: none; }
+
+      .about-inner { grid-template-columns: 1fr; gap: 48px; }
+      .about-photo-wrap { max-width: 300px; margin: 0 auto; height: auto; }
+
+      .pain-grid { grid-template-columns: 1fr 1fr; }
+      .pain-close { grid-template-columns: 1fr; gap: 28px; }
+
+      .how-steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .how-steps::before { display: none; }
+      .how-note { padding: 28px; }
+
+      .foot-row { flex-direction: column; text-align: center; gap: 16px; }
+    }
+
+    /* ══════════════ RESPONSIVE — MOBILE ══════════════ */
+    @media (max-width: 600px) {
+      .w { padding: 0 18px; }
+
+      /* ── Hero mobile: só texto + botão, sem foto ── */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+      }
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 18px 52px;
+        text-align: center;
+      }
+      .hero-left::after { display: none; }
+      .hero-top {
+        padding: 0;
+      }
+      .hero-right {
+        display: none; /* foto oculta no mobile */
+      }
+      .hero-bottom {
+        padding: 0;
+        text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 0;
+      }
+      /* Foto nítida no mobile */
+      .hero-photo {
+        mix-blend-mode: normal;
+        object-position: top center;
+        filter: none;
+      }
+      .h-badge { font-size: 11px; }
+      .hero h1 { font-size: clamp(26px, 8vw, 40px); line-height: 1.1; margin-bottom: 24px; }
+      .hero-sub { font-size: 15px; max-width: 100%; margin-bottom: 28px; }
+
+      /* ── Strip ── */
+      .strip-track { animation-duration: 18s; }
+
+      /* ── Dores ── */
+      .pain { padding: 64px 0; }
+      .pain-hd { margin-bottom: 44px; }
+      .pain-hd h2 { font-size: clamp(22px, 7vw, 32px); }
+      .pain-grid { grid-template-columns: 1fr; gap: 12px; }
+      .pc { padding: 24px 20px 28px; }
+      .pc-bg-num { font-size: 64px; }
+      .pain-close {
+        grid-template-columns: 1fr;
+        gap: 24px; padding-top: 40px;
+        text-align: center;
+      }
+      .pain-close-text p { font-size: 18px; }
+
+      /* ── Sobre ── */
+      .about { padding: 48px 0 48px; }
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .about-photo-wrap {
+        max-width: 240px;
+        margin: 0 auto;
+        height: auto;
+      }
+      .about-text {
+        text-align: center;
+        padding-top: 0;
+      }
+      .about-lbl {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .about-lbl::before, .about-lbl::after {
+        display: none;
+      }
+      .about h2 { font-size: clamp(24px, 7.5vw, 36px); }
+      .about p { font-size: 15px; }
+
+      /* ── Vídeo ── */
+      .vsec { padding: 40px 0 72px; }
+      .v-head h2 { font-size: clamp(22px, 7vw, 32px); }
+
+      /* ── Como funciona ── */
+      .how { padding: 64px 0; }
+      .how-hd { margin-bottom: 48px; }
+      .how-hd h2 { font-size: clamp(22px, 7vw, 32px); }
+      .how-steps { grid-template-columns: 1fr; gap: 0; }
+      .how-steps::before { display: none; }
+      .hs {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--sand);
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: 0 16px;
+        text-align: left;
+        align-items: start;
+      }
+      .hs:last-child { border-bottom: none; }
+      .hs-n {
+        width: 48px; height: 48px;
+        font-size: 15px; margin: 0;
+        grid-row: span 2;
+      }
+      .hs h3 { font-size: 15px; margin-bottom: 4px; }
+      .hs p   { font-size: 13px; }
+      .how-note { padding: 20px 16px; }
+      .how-note p { font-size: 14px; }
+
+      /* ── CTA ── */
+      .cta-band { padding: 64px 0; }
+      .cta-band h2 { font-size: clamp(24px, 7.5vw, 36px); margin-bottom: 24px; }
+      .cta-band p { font-size: 15px; margin-bottom: 40px; }
+      .cta-band::after { display: none; }
+
+      /* ── Form ── */
+      .formsec { padding: 64px 0; }
+
+      /* ── Footer ── */
+      .foot-row { flex-direction: column; text-align: center; gap: 16px; }
+
+      /* ── FAB menor ── */
+      .fab { width: 52px; height: 52px; bottom: 20px; right: 18px; }
+      .fab svg { width: 26px; height: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════
+     HERO
+══════════════════════════ -->
+<section class="hero">
+
+  <div class="hero-left">
+    <!-- hero-top: badge + título (fica acima da foto no mobile) -->
+    <div class="hero-top">
+      <h1>Recupere o controle do seu corpo com <em>fisioterapia pélvica</em> para a sua incontinência urinária e fecal.</h1>
+    </div>
+
+    <!-- hero-bottom: subtítulo + CTA (fica abaixo da foto no mobile) -->
+    <div class="hero-bottom">
+      <p class="hero-sub">Perda de xixi, perda de cocô ou urgência urinária têm solução. <strong>Tratamento adaptado para sua rotina e seu corpo, no conforto e na privacidade da sua casa.</strong></p>
+      <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
+        Quero recuperar minha qualidade de vida
+      </a>
+      <p class="hero-note"><strong>Atendimento particular a domicílio em Salvador/BA</strong></p>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="lilian-caldas-editada.png" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="hero-photo">
+  </div>
+
+</section>
+
+
+<!-- Faixa animada -->
+<div class="hero-strip" aria-hidden="true">
+  <div class="strip-track">
+    <span class="strip-item">Incontinência urinária</span>
+    <span class="strip-item">Dor pélvica</span>
+    <span class="strip-item">Disfunção sexual</span>
+    <span class="strip-item">Constipação crônica</span>
+    <span class="strip-item">Pós-prostatectomia</span>
+    <span class="strip-item">Incontinência fecal</span>
+    <span class="strip-item">Atendimento domiciliar</span>
+    <span class="strip-item">Saúde integrativa</span>
+    <span class="strip-item">Incontinência urinária</span>
+    <span class="strip-item">Dor pélvica</span>
+    <span class="strip-item">Disfunção sexual</span>
+    <span class="strip-item">Constipação crônica</span>
+    <span class="strip-item">Pós-prostatectomia</span>
+    <span class="strip-item">Incontinência fecal</span>
+    <span class="strip-item">Atendimento domiciliar</span>
+    <span class="strip-item">Saúde integrativa</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════
+     SEÇÃO DAS DORES
+══════════════════════════ -->
+<section class="pain">
+  <div class="pain-glow"></div>
+  <div class="w">
+
+    <div class="pain-hd rv">
+      <div class="pain-hd-label">Você se reconhece aqui?</div>
+      <h2>Alguns sinais que o corpo dá, mas a gente aprende a <em>ignorar</em></h2>
+    </div>
+
+    <div class="pain-grid">
+
+      <!-- 01 Incontinência urinária -->
+      <div class="pc rv">
+        <div class="pc-icon">
+          <!-- Gota d'água -->
+          <svg viewBox="0 0 32 32"><path d="M16 3C16 3 5 16 5 22a11 11 0 0022 0C27 16 16 3 16 3z"/><path d="M11 22a5 5 0 005 4" opacity=".5" stroke-width="1.5"/></svg>
+        </div>
+        <div class="pc-title">Incontinência urinária (Perda de xixi)</div>
+        <div class="pc-desc">Você evita rir, espirrar, pular ou agachar com medo de perder urina. Já deixou de fazer coisas que gosta por causa disso.</div>
+        <div class="pc-bg-num">01</div>
+      </div>
+
+      <!-- 02 Dor sexual -->
+      <div class="pc rv">
+        <div class="pc-icon">
+          <!-- Chama / dor -->
+          <svg viewBox="0 0 32 32"><path d="M16 4c0 0-4 5-4 9 0-2 2-3 2-3-2 5-1 9 2 11 3-2 4-6 2-11 0 0 2 1 2 3 0-4-4-9-4-9z"/><path d="M12 24c0 2.2 1.8 4 4 4s4-1.8 4-4" opacity=".5" stroke-width="1.5"/></svg>
+        </div>
+        <div class="pc-title">Urgência urinária</div>
+        <div class="pc-desc">A vontade de fazer xixi aparece com tanta força que você vai ao banheiro várias vezes ao dia. Mal consegue chegar a tempo. Às vezes não consegue.</div>
+        <div class="pc-bg-num">02</div>
+      </div>
+
+      <!-- 03 Pós-prostatectomia -->
+      <div class="pc rv">
+        <div class="pc-icon">
+          <!-- Cruz médica em círculo -->
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 10v12M10 16h12" stroke-width="2"/></svg>
+        </div>
+        <div class="pc-title">Incontinência fecal (Perda de cocô)</div>
+        <div class="pc-desc">Tem episódios de perda fecal que te impedem de sair de casa com tranquilidade. Você planeja tudo em torno de um banheiro.</div>
+        <div class="pc-bg-num">03</div>
+      </div>
+
+      <!-- 04 Incontinência fecal -->
+      <div class="pc rv">
+        <div class="pc-icon">
+          <!-- Ondas -->
+          <svg viewBox="0 0 32 32"><path d="M3 16q4-5 6-5t6 5 6-5 6 5"/><path d="M3 22q4-5 6-5t6 5 6-5 6 5" opacity=".45" stroke-width="1.5"/></svg>
+        </div>
+        <div class="pc-title">Incontinência mista</div>
+        <div class="pc-desc">Perde urina tanto ao espirrar e pular quanto quando sente aquela urgência repentina. Os dois ao mesmo tempo.</div>
+        <div class="pc-bg-num">04</div>
+      </div>
+
+    </div>
+
+    <div class="pain-close rv">
+      <div class="pain-close-text">
+        <p>Esses problemas não são frescura.<br><strong>Não são "coisa da idade".</strong></p>
+        <p>Na maioria dos casos,<br><strong>têm solução.</strong></p>
+      </div>
+      <div class="pain-close-cta">
+        <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
+          Quero entender o que está acontecendo com meu corpo
+        </a>
+        <p class="pain-close-info">Salvador/BA. Não aceitamos convênio.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     SOBRE — centralizado, fluindo para o vídeo
+══════════════════════════ -->
+<section class="about">
+  <div class="w">
+    <div class="about-inner rv">
+
+      <div class="about-photo-wrap">
+        <img src="lilian-caldas-editada.png" alt="Lílian Caldas, Fisioterapeuta Pélvica" class="about-photo">
+      </div>
+
+      <div class="about-text">
+        <div class="about-lbl">Quem está do outro lado</div>
+        <h2>Uma trajetória que começa muito antes da <em>fisioterapia</em></h2>
+
+        <p>Formada em Dança pela UFBA, mais de 25 anos como professora de Pilates, uma das pioneiras da modalidade em Salvador. A fisioterapia veio como consequência natural de uma vida inteira fascinada pelo corpo humano e pelo movimento.</p>
+
+        <p>Depois da graduação, veio a especialização em Fisioterapia Pélvica. Depois, estudos em saúde integrativa. Não porque era obrigatório, mas porque metade das respostas que os pacientes precisam estão na interseção entre essas áreas.</p>
+
+        <p>Tudo isso para oferecer o que a maioria dos tratamentos não oferece: atenção e percepção ao seu corpo inteiro, enxergando mais caminhos para tratar o que você sente.</p>
+
+        <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer" style="margin-top:8px;">
+          Quero agendar minha avaliação
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Divisor decorativo ligando ao vídeo abaixo -->
+    <div class="about-divider rv">
+      <div class="about-divider-dot"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     VÍDEO
+══════════════════════════ -->
+<section class="vsec">
+  <div class="w">
+
+    <div class="v-head rv">
+      <h2>Ouça nossa profissional por <em>menos de 3 minutos</em></h2>
+      <p>E sinta se existe conexão. Porque se sentir à vontade também faz parte do tratamento.</p>
+    </div>
+
+    <div class="v-frame rv">
+      <!-- Substitua SEU_VIDEO_ID pelo ID do vídeo YouTube -->
+      <iframe
+        src="https://www.youtube.com/embed/rrWjl_648zw"
+        title="Lílian Caldas — Fisioterapeuta Pélvica"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy"
+      ></iframe>
+    </div>
+
+    <div class="v-cta rv">
+      <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
+        Faz sentido para mim. Quero conversar.
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     COMO FUNCIONA
+══════════════════════════ -->
+<section class="how">
+  <div class="w">
+
+    <div class="how-hd rv">
+      <h2>Simples, <em>sem burocracia</em> e no seu ritmo</h2>
+    </div>
+
+    <div class="how-steps">
+      <div class="hs rv">
+        <div class="hs-n">01</div>
+        <h3>Uma conversa</h3>
+        <p>Pelo WhatsApp para entender sua situação, sem compromisso.</p>
+      </div>
+      <div class="hs rv">
+        <div class="hs-n">02</div>
+        <h3>Avaliação</h3>
+        <p>Domiciliar, na sua casa, no seu ritmo, sem pressa.</p>
+      </div>
+      <div class="hs rv">
+        <div class="hs-n">03</div>
+        <h3>Plano sob medida</h3>
+        <p>Construído para o seu corpo e rotina. Nada genérico.</p>
+      </div>
+      <div class="hs rv">
+        <div class="hs-n">04</div>
+        <h3>Acompanhamento</h3>
+        <p>Sessões com presença real, do começo ao fim.</p>
+      </div>
+    </div>
+
+    <div class="how-note rv">
+      <p>
+        <strong>Não aceitamos convênio.</strong><br>
+        O atendimento é particular porque assim é possível dedicar o tempo e a atenção que cada caso realmente exige. Sem limite de sessões imposto por plano, sem consulta cronometrada e sem protocolo genérico.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     CTA FINAL
+══════════════════════════ -->
+<section class="cta-band">
+  <div class="w">
+    <h2>Seu corpo está pedindo atenção.<br>Você merece ouvir.</h2>
+    <p>Uma mensagem no WhatsApp já é suficiente para começar.<br>Sem compromisso, sem pressão, sem julgamento.</p>
+    <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
+      Estou pronta para dar o primeiro passo
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     FORMULÁRIO
+══════════════════════════ -->
+<section class="formsec">
+  <div class="w">
+    <div class="form-in">
+
+      <div class="form-hd rv">
+        <h2>Prefere receber um contato?</h2>
+        <p>Preencha abaixo e o retorno acontece em até 24 horas.</p>
+      </div>
+
+      <form id="contactForm" class="fg rv">
+        <div class="fd">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
+        </div>
+        <div class="fd">
+          <label for="zap">WhatsApp</label>
+          <input type="tel" id="zap" name="whatsapp" placeholder="(71) 9 0000-0000" required autocomplete="tel">
+        </div>
+        <div class="fd">
+          <label for="queixa">Principal queixa</label>
+          <select id="queixa" name="queixa" required>
+            <option value="" disabled selected>Selecione sua principal queixa</option>
+            <option>Incontinência urinária</option>
+            <option>Incontinência fecal</option>
+            <option>Dor pélvica</option>
+            <option>Disfunção sexual</option>
+            <option>Pré ou pós-prostatectomia</option>
+            <option>Constipação</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="fd">
+          <label for="origem">Como nos encontrou</label>
+          <select id="origem" name="origem" required>
+            <option value="" disabled selected>Como você chegou até aqui?</option>
+            <option>Google</option>
+            <option>Instagram</option>
+            <option>Indicação</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-sb">
+          <button type="submit" class="btn btn-p">Quero ser contactada(o)</button>
+          <p style="font-size: 13px; color: var(--ink-mid); margin-top: 16px; text-align: center;">Salvador/BA. Não aceitamos convênio.</p>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="w">
+    <div class="foot-row">
+      <div>
+        <div class="f-name">Lílian Caldas</div>
+        <div class="f-role">Fisioterapeuta Pélvica · Salvador, Bahia</div>
+        <div style="font-size: 12px; color: rgba(255,255,255,.6); margin-top: 8px;">CREFITO-7: 263537-F</div>
+      </div>
+      <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer" style="font-size:13px;padding:10px 20px;">
+        Falar no WhatsApp
+      </a>
+    </div>
+    <div class="f-copy">© 2025 Lílian Caldas. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5571999682553" class="fab" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+
+<script>
+  /* Scroll reveal com stagger */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const siblings = [...entry.target.parentElement.querySelectorAll('.rv')];
+      const delay = siblings.indexOf(entry.target) * 85;
+      setTimeout(() => entry.target.classList.add('in'), delay);
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+  /* Contact form submission - Send to Google Sheets */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const whatsapp = document.getElementById('zap').value.trim();
+      const queixa = document.getElementById('queixa').value;
+      const origem = document.getElementById('origem').value;
+
+      if (!nome || !whatsapp || !queixa || !origem) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      try {
+        // Enviar para Google Apps Script
+        await fetch('https://script.google.com/macros/s/AKfycby31MSsluN0H3YSLJK38lP7V-Kwbs1lmneyAgShEmC9CxHwQb4WotWg6kgXZ4V20-8rXQ/exec', {
+          method: 'POST',
+          body: JSON.stringify({
+            nome: nome,
+            whatsapp: whatsapp,
+            queixa: queixa,
+            origem: origem,
+            data: new Date().toLocaleString('pt-BR')
+          })
+        });
+
+        // Redirecionar para página de obrigado
+        window.location.href = '/obrigado.html';
+
+      } catch (error) {
+        console.error('Erro:', error);
+        // Mesmo com erro, redireciona
+        window.location.href = '/obrigado.html';
+      }
+    });
+  }
+
+  /* Form → WhatsApp */
+  function send(e) {
+    e.preventDefault();
+    const nome   = document.getElementById('nome').value.trim();
+    const zap    = document.getElementById('zap').value.trim();
+    const q      = document.getElementById('queixa');
+    const queixa = q.options[q.selectedIndex].text;
+    if (!nome || !zap) return;
+    const msg = encodeURIComponent(`Olá, Lílian!\nMe chamo ${nome}.\nMeu WhatsApp: ${zap}.\nMinha principal queixa: ${queixa}.`);
+    window.open(`https://wa.me/5571999682553?text=${msg}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
