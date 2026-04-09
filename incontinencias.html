@@ -141,14 +141,31 @@
     }
 
     .hero h1 {
-      font-size: clamp(34px, 3.5vw, 48px);
+      font-size: clamp(32px, 3.2vw, 44px);
       font-weight: 800;
       color: var(--ink);
-      line-height: 1.15;
-      letter-spacing: -.02em;
+      line-height: 1.2;
+      letter-spacing: -.01em;
       margin-bottom: 24px;
     }
     .hero h1 em { font-style: italic; color: var(--primary); font-weight: 700; }
+
+    .hero-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-mid);
+      margin-bottom: 16px;
+      letter-spacing: .02em;
+    }
+    .hero-location svg {
+      width: 14px;
+      height: 14px;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
 
     .hero-sub {
       font-size: 14px; font-weight: 400;
@@ -245,7 +262,7 @@
     /* Grid 3x2 com cards visuais */
     .pain-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin-bottom: 72px;
       position: relative; z-index: 1;
@@ -704,7 +721,14 @@
   <div class="hero-left">
     <!-- hero-top: badge + título (fica acima da foto no mobile) -->
     <div class="hero-top">
-      <h1>Recupere o controle do seu corpo com <em>fisioterapia pélvica</em> para a sua incontinência urinária e fecal.</h1>
+      <div class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Salvador, BA</span>
+      </div>
+      <h1>Recupere o controle<br>do seu corpo com<br><em>fisioterapia pélvica</em><br>para incontinência.</h1>
     </div>
 
     <!-- hero-bottom: subtítulo + CTA (fica abaixo da foto no mobile) -->
@@ -728,18 +752,15 @@
 <div class="hero-strip" aria-hidden="true">
   <div class="strip-track">
     <span class="strip-item">Incontinência urinária</span>
-    <span class="strip-item">Dor pélvica</span>
-    <span class="strip-item">Disfunção sexual</span>
-    <span class="strip-item">Constipação crônica</span>
-    <span class="strip-item">Pós-prostatectomia</span>
+    <span class="strip-item">Urgência urinária</span>
     <span class="strip-item">Incontinência fecal</span>
+    <span class="strip-item">Incontinência mista</span>
     <span class="strip-item">Atendimento domiciliar</span>
     <span class="strip-item">Saúde integrativa</span>
     <span class="strip-item">Incontinência urinária</span>
-    <span class="strip-item">Dor pélvica</span>
-    <span class="strip-item">Disfunção sexual</span>
-    <span class="strip-item">Constipação crônica</span>
-    <span class="strip-item">Pós-prostatectomia</span>
+    <span class="strip-item">Urgência urinária</span>
+    <span class="strip-item">Incontinência fecal</span>
+    <span class="strip-item">Incontinência mista</span>
     <span class="strip-item">Incontinência fecal</span>
     <span class="strip-item">Atendimento domiciliar</span>
     <span class="strip-item">Saúde integrativa</span>
