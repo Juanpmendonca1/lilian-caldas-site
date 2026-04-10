@@ -16,15 +16,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18074460306"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-18074460306');
-  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P8PL4WZN');</script>
+  <!-- End Google Tag Manager -->
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -170,12 +168,14 @@
     .hero-sub {
       font-size: 16px; font-weight: 400;
       line-height: 1.75; color: var(--ink-soft);
-      margin-bottom: 36px; max-width: 500px;
+      margin-bottom: 36px; max-width: 480px;
     }
     .hero-sub strong {
       font-weight: 700;
       color: var(--ink);
     }
+    .hero-sub .desktop { display: inline; }
+    .hero-sub .mobile { display: none; }
 
     .hero-note {
       font-size: 13px; font-weight: 600; color: var(--ink); margin-top: 18px;
@@ -620,6 +620,8 @@
       .h-badge { font-size: 11px; }
       .hero h1 { font-size: clamp(26px, 8vw, 40px); line-height: 1.1; margin-bottom: 24px; }
       .hero-sub { font-size: 15px; max-width: 100%; margin-bottom: 28px; }
+      .hero-sub .desktop { display: none; }
+      .hero-sub .mobile { display: inline; }
 
       /* ── Strip ── */
       .strip-track { animation-duration: 18s; }
@@ -713,6 +715,11 @@
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8PL4WZN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- ══════════════════════════
      HERO
 ══════════════════════════ -->
@@ -733,7 +740,7 @@
 
     <!-- hero-bottom: subtítulo + CTA (fica abaixo da foto no mobile) -->
     <div class="hero-bottom">
-      <p class="hero-sub"><strong>Pós-prostatectomia ou pós-sacrectomia</strong> deixam sequelas como incontinência e dor pélvica. Tudo isso tem tratamento, adaptado para sua rotina e seu corpo, no conforto da sua casa.</p>
+      <p class="hero-sub"><strong>Pós-prostatectomia ou pós-sacrectomia parcial</strong> deixam sequelas como incontinência e dor pélvica. Tudo isso tem tratamento, <span class="desktop">adaptado para seu corpo, no conforto da sua casa.</span><span class="mobile">adaptado para sua rotina e seu corpo, no conforto da sua casa.</span></p>
       <a href="https://wa.me/5571999682553" class="btn btn-p" target="_blank" rel="noopener noreferrer">
         Quero recuperar minha qualidade de vida
       </a>
