@@ -499,6 +499,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.65;
     }
 
+    /* ══════════════ FAQ ══════════════ */
+    .faq { padding: 100px 0; background: var(--cream); }
+    .faq-hd { text-align: center; margin-bottom: 56px; }
+    .faq-hd-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--terra); margin-bottom: 16px;
+    }
+    .faq-hd h2 {
+      font-size: clamp(24px, 3vw, 38px); font-weight: 700;
+      color: var(--ink); letter-spacing: -.02em; line-height: 1.2;
+    }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--sand);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--sand); }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; gap: 16px;
+      font-family: var(--ff); font-size: 16px; font-weight: 600;
+      color: var(--ink); text-align: left; line-height: 1.4;
+    }
+    .faq-q:hover { color: var(--primary); }
+    .faq-icon {
+      width: 24px; height: 24px; flex-shrink: 0;
+      border-radius: 50%; border: 1.5px solid var(--sand);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--ink-soft); transition: transform .25s, background .25s, border-color .25s;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: var(--primary); border-color: var(--primary); color: #fff;
+    }
+    .faq-a {
+      overflow: hidden; max-height: 0;
+      transition: max-height .35s ease, padding .25s ease;
+    }
+    .faq-a p {
+      padding: 0 0 22px; font-size: 15px; color: var(--ink-soft); line-height: 1.75;
+    }
+    .faq-a p strong { color: var(--ink); }
+
     /* ══════════════ FORMULÁRIO ══════════════ */
     .formsec { padding: 100px 0; background: var(--warm); }
     .form-in { max-width: 560px; margin: 0 auto; }
@@ -698,6 +742,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .cta-band::after { display: none; }
 
       /* ── Form ── */
+      .faq { padding: 64px 0; }
+      .faq-q { font-size: 15px; padding: 18px 0; }
       .formsec { padding: 64px 0; }
 
       /* ── Footer ── */
@@ -754,22 +800,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Faixa animada -->
 <div class="hero-strip" aria-hidden="true">
   <div class="strip-track">
-    <span class="strip-item">Incontinência urinária</span>
-    <span class="strip-item">Dor pélvica</span>
-    <span class="strip-item">Disfunção sexual</span>
-    <span class="strip-item">Constipação crônica</span>
-    <span class="strip-item">Pós-prostatectomia</span>
-    <span class="strip-item">Incontinência fecal</span>
-    <span class="strip-item">Atendimento domiciliar</span>
-    <span class="strip-item">Saúde integrativa</span>
-    <span class="strip-item">Incontinência urinária</span>
-    <span class="strip-item">Dor pélvica</span>
-    <span class="strip-item">Disfunção sexual</span>
-    <span class="strip-item">Constipação crônica</span>
-    <span class="strip-item">Pós-prostatectomia</span>
-    <span class="strip-item">Incontinência fecal</span>
-    <span class="strip-item">Atendimento domiciliar</span>
-    <span class="strip-item">Saúde integrativa</span>
+    <span class="strip-item">Fisioterapia Pélvica</span>
+    <span class="strip-item">Fisioterapia Uroginecológica</span>
+    <span class="strip-item">Fisioterapia Urológica</span>
+    <span class="strip-item">Fisioterapia Ginecológica</span>
+    <span class="strip-item">Fisioterapia Proctológica</span>
+    <span class="strip-item">Atendimento Domiciliar</span>
+    <span class="strip-item">Salvador, BA</span>
+    <span class="strip-item">Saúde Integrativa</span>
+    <span class="strip-item">Fisioterapia Pélvica</span>
+    <span class="strip-item">Fisioterapia Uroginecológica</span>
+    <span class="strip-item">Fisioterapia Urológica</span>
+    <span class="strip-item">Fisioterapia Ginecológica</span>
+    <span class="strip-item">Fisioterapia Proctológica</span>
+    <span class="strip-item">Atendimento Domiciliar</span>
+    <span class="strip-item">Salvador, BA</span>
+    <span class="strip-item">Saúde Integrativa</span>
   </div>
 </div>
 
@@ -890,7 +936,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <p>Formada em Dança pela UFBA, mais de 25 anos como professora de Pilates, uma das pioneiras da modalidade em Salvador. A fisioterapia veio como consequência natural de uma vida inteira fascinada pelo corpo humano e pelo movimento.</p>
 
-        <p>Depois da graduação, veio a especialização em Fisioterapia Pélvica. Depois, estudos em saúde integrativa. Não porque era obrigatório, mas porque metade das respostas que os pacientes precisam estão na interseção entre essas áreas.</p>
+        <p>Depois da graduação, veio a especialização em <strong>Fisioterapia Pélvica</strong> — também chamada de Fisioterapia Uroginecológica, Urológica, Ginecológica ou Proctológica. São nomes diferentes para a mesma área: o tratamento das disfunções do assoalho pélvico. Depois, estudos em saúde integrativa. Não porque era obrigatório, mas porque metade das respostas que os pacientes precisam estão na interseção entre essas áreas.</p>
 
         <p>Tudo isso para oferecer o que a maioria dos tratamentos não oferece: atenção e percepção ao seu corpo inteiro, enxergando mais caminhos para tratar o que você sente.</p>
 
@@ -1021,9 +1067,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="tel" id="zap" name="whatsapp" placeholder="(71) 9 0000-0000" required autocomplete="tel">
         </div>
         <div class="fd">
-          <label for="queixa">Principal queixa</label>
-          <select id="queixa" name="queixa" required>
-            <option value="" disabled selected>Selecione sua principal queixa</option>
+          <label for="queixa">Principal queixa <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink-soft)">(opcional)</span></label>
+          <select id="queixa" name="queixa">
+            <option value="" selected>Selecione sua principal queixa</option>
             <option>Incontinência urinária</option>
             <option>Incontinência fecal</option>
             <option>Dor pélvica</option>
@@ -1033,21 +1079,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <option>Outro</option>
           </select>
         </div>
-        <div class="fd">
-          <label for="origem">Como nos encontrou</label>
-          <select id="origem" name="origem" required>
-            <option value="" disabled selected>Como você chegou até aqui?</option>
-            <option>Google</option>
-            <option>Instagram</option>
-            <option>Indicação</option>
-            <option>Outro</option>
-          </select>
-        </div>
         <div class="form-sb">
           <button type="submit" class="btn btn-p">Quero ser contactada(o)</button>
           <p style="font-size: 13px; color: var(--ink-mid); margin-top: 16px; text-align: center;">Salvador/BA. Não aceitamos convênio.</p>
         </div>
       </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════
+     FAQ
+══════════════════════════ -->
+<section class="faq">
+  <div class="w">
+    <div class="faq-hd rv">
+      <div class="faq-hd-label">Dúvidas frequentes</div>
+      <h2>Perguntas que a gente recebe sempre</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">
+          Fisioterapia pélvica, uroginecológica, urológica, proctológica… tem diferença?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>A fisioterapia pélvica engloba a fisioterapia uroginecológica, urológica, ginecológica e proctológica. Se você está procurando por qualquer um desses nomes, a Dra. Lílian consegue te ajudar.</p></div>
+      </div>
+
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">
+          O atendimento é presencial ou online?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>O atendimento é <strong>presencial, na casa do próprio paciente</strong>. A Dra. Lílian se desloca até você em Salvador/BA, trazendo todo o equipamento necessário. Isso garante mais conforto, privacidade e praticidade — sem precisar se deslocar até uma clínica.</p></div>
+      </div>
+
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">
+          Atende por convênio?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p><strong>Não aceitamos convênio.</strong> O atendimento é particular. Isso permite dedicar o tempo necessário a cada paciente, sem as limitações impostas pelos planos de saúde.</p></div>
+      </div>
+
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">
+          Atende em qual cidade?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>O atendimento é feito em <strong>Salvador, Bahia</strong>. O deslocamento até a sua casa está incluído no serviço.</p></div>
+      </div>
+
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">
+          É possível fechar pacote de sessões? Tem parcelamento?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>Sim. <strong>É possível fechar pacotes de sessões</strong> com condições especiais, e parcelamentos são negociados diretamente com a Dra. Lílian conforme o seu caso. Entre em contato pelo WhatsApp para conversar sobre as opções.</p></div>
+      </div>
 
     </div>
   </div>
@@ -1101,10 +1193,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const nome = document.getElementById('nome').value.trim();
       const whatsapp = document.getElementById('zap').value.trim();
       const queixa = document.getElementById('queixa').value;
-      const origem = document.getElementById('origem').value;
 
-      if (!nome || !whatsapp || !queixa || !origem) {
-        alert('Por favor, preencha todos os campos.');
+      if (!nome || !whatsapp) {
+        alert('Por favor, preencha nome e WhatsApp.');
         return;
       }
 
@@ -1115,8 +1206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           body: JSON.stringify({
             nome: nome,
             whatsapp: whatsapp,
-            queixa: queixa,
-            origem: origem,
+            queixa: queixa || '(não informado)',
             data: new Date().toLocaleString('pt-BR')
           })
         });
@@ -1131,6 +1221,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     });
   }
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-a').style.maxHeight = '0';
+        el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 
   /* Form → WhatsApp */
   function send(e) {
